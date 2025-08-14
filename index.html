@@ -613,14 +613,21 @@
           <div class="contact-form">
             <h3 style="margin-bottom: 2rem">Send Me a Message</h3>
             <form
-              action="https://docs.google.com/forms/d/e/1FAIpQLSc1vmIyugdTkV1J6VGFTZaF0uQnnVfARtnYBPeeCQJgmnLSow/formResponse"
-              method="POST"
-              target="hidden_iframe"
-              onsubmit="handleFormSubmit()"
+              id="googleForm"
             >
               <div class="form-group">
                 <label for="name">Your Name</label>
                 <input type="text" id="name" name="entry.1280662544" required />
+              </div>
+
+               <div class="form-group">
+                <label for="mobile">Your Phone</label>
+                <input
+                  type="number"
+                  id="phone"
+                  name="entry.1818472897"
+                  required
+                />
               </div>
 
               <div class="form-group">
@@ -660,11 +667,7 @@
               </button>
             </form>
 
-            <iframe
-              name="hidden_iframe"
-              id="hidden_iframe"
-              style="display: none"
-            ></iframe>
+           <div id="toast">Form successfully submitted! 🎉</div>
           </div>
         </div>
       </div>
